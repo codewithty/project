@@ -1,54 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Magik Mastery Guide</title>
-    
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KovaaK's Tracker</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <header>
-        <img src="https://www.google.com/imgres?q=magik%20marvel%20rivals&imgurl=https%3A%2F%2Fstatic.wikia.nocookie.net%2Fmarvel-rivals%2Fimages%2Fe%2Fe3%2FMagik_Amethyst_Armor_LoC_Icon.png%2Frevision%2Flatest%2Fscale-to-width-down%2F284%3Fcb%3D20241229152623&imgrefurl=https%3A%2F%2Fmarvelrivals.fandom.com%2Fwiki%2FMagik&docid=0EP-ubanejvjZM&tbnid=wO6tHwfWeuERxM&vet=12ahUKEwjw96XP3qCUAxWcKFkFHU4tEmwQnPAOegQIEhAB..i&w=284&h=536&hcb=2&ved=2ahUKEwjw96XP3qCUAxWcKFkFHU4tEmwQnPAOegQIEhAB">
-        <h1>Magik Guide</h1>
-        <p>Learn how to play the hybrid brawl/dive dps Magik</p>
-    </header>
+  <header>
+    <h1>KovaaK's Tracker</h1>
+    <p>Track your aim training sessions and monitor your progress.</p>
+  </header>
 
-    <nav>
-        <ul>
-            <li><a href="#">Playstyles</a></li>
-            <li><a href="#">Combos</a></li>
-            <li><a href="#">Counters</a></li>
-            <li><a href="#">Tips</a></li>
-        </ul>
-    </nav>
+  <main>
+    <section>
+      <h2>Add Scenario</h2>
 
-    <main>
-        <section id="Playstyles">
-            <h2></h2>
-            <p></p>
-        </section>
+      <form id="sessionForm">
+        <input type="text" id="scenario" placeholder="Scenario name">
+        <input type="number" id="score" placeholder="Score">
 
-        <section id="Combos">
-            <h2>Abilities</h2>
-            <p></p>
-        </section>
+        <select id="category">
+          <option value="">Select Category</option> 
+          <option value="Tracking">Tracking</option>
+          <option value="Clicking">Clicking</option>
+          <option value="Switching">Switching</option>
+        </select>
 
-        <section id="Counters">
-            <h2>Playstyle</h2>
-            <p></p>
-        </section>
+        <input type="text" id="subCategory" placeholder="Subcategory">
 
-        <section id="Tips">
-            <h2>Beginner Tips</h2>
-            <p></p>
-        </section>
-    </main>
+        <button type="submit">Add Scenario/Task</button>
+      </form>
 
-    <script src="script.js"></script>
+        <button id="completeSessionBtn" type="button">Complete Session</button>
+
+        <input type ="text" id="sessionLength" placeholder="Session length ex: 15 mins">
+
+    </section>
+
+    <section>
+        <h2>Current Session</h2>
+        <div id="currentSessionList"></div>
+    </section>
+
+    <section>
+      <h2>Session History</h2>
+      <div id="sessionList"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
 </body>
-
 </html>
